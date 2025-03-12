@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="start-screen" id="start-screen">
+        <h1>Tic Tac Toe</h1>
+        <p>Kim başlasın?</p>
+        <button id="player-start">Ben (X)</button>
+        <button id="computer-start">Bilgisayar (O)</button>
+    </div>
+    <div class="game-container" id="game-container" style="display: none;">
+        <h1>Tic Tac Toe</h1>
+        <div class="score-board">
+            <span>Siz: <span id="player-score">0</span></span>
+            <span>Bilgisayar: <span id="computer-score">0</span></span>
+        </div>
+        <div id="game-board"></div>
+        <div id="message">Sıra: X</div>
+        <button id="reset-btn">Yeni Oyun</button>
+        <div id="winner-message" class="winner-message"></div>
+        <footer>
+            © Bektas - 2025
+        </footer>
+    </div>
+    <script src="static/script.js"></script>
+</body>
+</html>

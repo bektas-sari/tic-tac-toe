@@ -1,0 +1,114 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    color: #333;
+}
+
+.start-screen, .game-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.start-screen p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.start-screen button, #reset-btn {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    margin: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+}
+
+.start-screen button:hover, #reset-btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+.score-board {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 110px);
+    grid-gap: 8px;
+    margin: 0 auto;
+    width: 350px;
+}
+
+.cell {
+    width: 110px;
+    height: 110px;
+    background: #ecf0f1;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: #2c3e50;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    background: #dfe6e9;
+    transform: scale(1.03);
+}
+
+#message {
+    margin: 20px 0;
+    font-size: 1.6em;
+    color: #34495e;
+}
+
+.winner-message {
+    margin-top: 20px;
+    font-size: 2em;
+    color: #27ae60;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.winner-message.show {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+footer{
+    text-align: center;
+    margin-top: 14px;
+    font-size: 0.8em;
+    color: #2c3e50;
+}
