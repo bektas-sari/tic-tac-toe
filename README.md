@@ -21,11 +21,16 @@ git clone https://github.com/bektas-sari/tic-tac-toe.git
 cd tic-tac-toe
 ```
 
-### 2️⃣ **Oyunu Başlatın**
+### 2️⃣ **Bağımlılıkları Yükleyin**
+```bash
+pip install -r requirements.txt
 ```
-index.html dosyasını bir tarayıcıda açın.
+
+### 3️⃣ **Sunucuyu Başlatın**
+```bash
+python app.py
 ```
-💡 **Herhangi bir kurulum gerektirmez, direkt açıp oynayabilirsiniz!**
+💡 **Yerel olarak çalıştırmak için yukarıdaki adımları takip edin.**
 
 ---
 
@@ -50,20 +55,16 @@ index.html dosyasını bir tarayıcıda açın.
 ## 📂 **Proje Dosya Yapısı**
 ```
 📁 tic-tac-toe/
- ├── 📄 index.html    # Ana HTML dosyası
- ├── 📄 style.css     # Stil dosyası (Tasarım)
- ├── 📄 script.js     # Oyun Mantığı (Minimax AI)
- ├── 📄 README.md     # Açıklamalar
+ ├── 📂 static/          # Statik dosyalar (CSS & JS)
+ │   ├── 📄 script.js    # Oyun Mantığı (Minimax AI)
+ │   ├── 📄 style.css    # CSS dosyası
+ ├── 📂 templates/       # HTML dosyaları
+ │   ├── 📄 index.html   # Ana HTML dosyası
+ ├── 📄 app.py           # Flask Backend
+ ├── 📄 requirements.txt  # Bağımlılıklar
+ ├── 📄 Procfile         # Render İçin Başlatma Dosyası
+ ├── 📄 README.md        # Açıklamalar
 ```
-
----
-
-## 🏆 **Gelecek Güncellemeler**
-🔹 **Çoklu oyuncu modu (Online Oyun)**  
-🔹 **Farklı Zorluk Seviyeleri**  
-🔹 **Ses Efektleri ve Daha Fazla Animasyon** 🎵
-
----
 
 ## 📜 **Lisans**
 Bu proje **MIT Lisansı** ile açık kaynak olarak sunulmaktadır. Dilediğiniz gibi kullanabilirsiniz. ⭐
